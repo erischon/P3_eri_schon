@@ -5,7 +5,8 @@ from position import Position
 
 
 class Maze:
-    """ """
+    """ I create the board of the maze. """
+
     def __init__(self, filename):
         """ initialize the maze. """
         self.settings = Settings()
@@ -73,12 +74,12 @@ class Maze:
         if cell_pos in self.start:
             return False
         elif cell_pos in self.goal:
-            return 'goal'
+            return "goal"
         elif cell_pos in self.item1:
-            return 'item1'
+            return "item1"
         elif cell_pos in self.item2:
-            return 'item2'
+            return "item2"
         elif cell_pos in self.item3:
-            return 'item3'
+            return "item3"
         else:
             return False

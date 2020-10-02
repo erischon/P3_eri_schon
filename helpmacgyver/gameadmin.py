@@ -1,9 +1,9 @@
-
 import pygame
 
 
 class GameAdmin:
     """ I'm the admin of the game. """
+
     def __init__(self, window):
         self.window = window
 

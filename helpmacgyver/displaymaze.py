@@ -1,11 +1,11 @@
 import pygame
 
-# from maze import Maze
 from settings import Settings
 
 
 class DisplayMaze:
     """ I'm the object who display the maze with Pygame. """
+
     def __init__(self, paths, walls, start, goal, item1, item2, item3):
         """ I'm initialize the object DisplayMaze. """
         self.data = Settings()
