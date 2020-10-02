@@ -7,16 +7,16 @@ class Settings:
         self.GOAL_CHAR = "G"
         self.PATH_CHAR = "."
         self.WALL_CHAR = "#"
-        self.FILENAME = "map-1.txt"
+        self.FILENAME = "helpmacgyver/map-1.txt"
 
         # Pygame Images
-        self.floor = "images/floor.bmp"
-        self.wall = "images/wall.bmp"
-        self.goal = "images/Gardien.png"
-        self.macgyver = "images/MacGyver.png"
-        self.item1 = "images/ether.png"
-        self.item2 = "images/seringue.png"
-        self.item3 = "images/tube_plastique.png"
+        self.floor = "helpmacgyver/images/floor.bmp"
+        self.wall = "helpmacgyver/images/wall.bmp"
+        self.goal = "helpmacgyver/images/Gardien.png"
+        self.macgyver = "helpmacgyver/images/MacGyver.png"
+        self.item1 = "helpmacgyver/images/ether.png"
+        self.item2 = "helpmacgyver/images/seringue.png"
+        self.item3 = "helpmacgyver/images/tube_plastique.png"
         self.img_dimension_x = 40
         self.img_dimension_y = 40
 

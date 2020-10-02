@@ -1,7 +1,7 @@
 import random
 
-from settings import Settings
-from position import Position
+from .settings import Settings
+from .position import Position
 
 
 class Maze:

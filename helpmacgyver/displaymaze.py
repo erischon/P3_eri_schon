@@ -1,6 +1,6 @@
 import pygame
 
-from settings import Settings
+from .settings import Settings
 
 
 class DisplayMaze:

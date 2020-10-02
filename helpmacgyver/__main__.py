@@ -1,11 +1,11 @@
 import pygame
 import sys
 
-from maze import Maze
-from displaymaze import DisplayMaze
-from macgyver import MacGyver
-from settings import Settings
-from gameadmin import GameAdmin
+from .maze import Maze
+from .displaymaze import DisplayMaze
+from .macgyver import MacGyver
+from .settings import Settings
+from .gameadmin import GameAdmin
 
 
 class Main:
