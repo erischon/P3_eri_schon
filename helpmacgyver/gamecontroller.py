@@ -1,7 +1,7 @@
 import pygame
 
 
-class GameAdmin:
+class GameController:
     """ I'm the admin of the game. """
 
     def __init__(self, window):

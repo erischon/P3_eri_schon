@@ -5,7 +5,7 @@ from .maze import Maze
 from .displaymaze import DisplayMaze
 from .macgyver import MacGyver
 from .settings import Settings
-from .gameadmin import GameAdmin
+from .gamecontroller import GameController
 
 
 class Main:
@@ -16,7 +16,7 @@ class Main:
         pygame.init()
         self.settings = Settings()
         self.window = pygame.display.set_mode(self.settings.maze_dimensions)
-        self.admin = GameAdmin(self.window)
+        self.admin = GameController(self.window)
         self.m = Maze(self.settings.FILENAME)
         self.mg = MacGyver(self.m)
 
