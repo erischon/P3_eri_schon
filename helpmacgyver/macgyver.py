@@ -27,11 +27,7 @@ class MacGyver:
 
     def search_special(self, special_cell):
         """ I'm looking if there is something special on the cell. """
-        if special_cell == "item1":
-            self.pouch_bag(special_cell)
-        elif special_cell == "item2":
-            self.pouch_bag(special_cell)
-        elif special_cell == "item3":
+        if special_cell in ["item1", "item2", "item3"]:
             self.pouch_bag(special_cell)
         elif special_cell == "goal":
             self.mac_goal = True
