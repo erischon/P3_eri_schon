@@ -52,22 +52,22 @@ class Main:
         """ Respond to keypresses. """
         if event.key == pygame.K_RIGHT:
             # move MacGyver to the right
-            validate = self.mg.move("RIGHT")
+            validate = self.mg.move("right")
             if validate is True:
                 self.move_mac(((self.settings.cell_dimension_x), 0))
             self.check_end()
         elif event.key == pygame.K_LEFT:
-            validate = self.mg.move("LEFT")
+            validate = self.mg.move("left")
             if validate is True:
                 self.move_mac(((self.settings.cell_dimension_x * -1), 0))
             self.check_end()
         elif event.key == pygame.K_DOWN:
-            validate = self.mg.move("DOWN")
+            validate = self.mg.move("down")
             if validate is True:
                 self.move_mac((0, (self.settings.cell_dimension_x)))
             self.check_end()
         elif event.key == pygame.K_UP:
-            validate = self.mg.move("UP")
+            validate = self.mg.move("up")
             if validate is True:
                 self.move_mac((0, (self.settings.cell_dimension_x * -1)))
             self.check_end()

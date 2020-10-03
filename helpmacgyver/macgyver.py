@@ -17,34 +17,13 @@ class MacGyver:
 
     def move(self, direction):
         """ I move player and check if there is something to do after. """
-        if direction == "UP":
-            if Position.up(self.mg_pos) in self.paths:
-                self.mg_pos = Position.up(self.mg_pos)
-                special_cell = self.maze.is_special_cell(self.mg_pos)
-                if special_cell is not False:
-                    self.search_special(special_cell)
-                return True
-        if direction == "DOWN":
-            if Position.down(self.mg_pos) in self.paths:
-                self.mg_pos = Position.down(self.mg_pos)
-                special_cell = self.maze.is_special_cell(self.mg_pos)
-                if special_cell is not False:
-                    self.search_special(special_cell)
-                return True
-        if direction == "RIGHT":
-            if Position.right(self.mg_pos) in self.paths:
-                self.mg_pos = Position.right(self.mg_pos)
-                special_cell = self.maze.is_special_cell(self.mg_pos)
-                if special_cell is not False:
-                    self.search_special(special_cell)
-                return True
-        if direction == "LEFT":
-            if Position.left(self.mg_pos) in self.paths:
-                self.mg_pos = Position.left(self.mg_pos)
-                special_cell = self.maze.is_special_cell(self.mg_pos)
-                if special_cell is not False:
-                    self.search_special(special_cell)
-                return True
+        direction_mov = getattr(self.mg_pos, direction)
+        if direction_mov() in self.paths:
+            self.mg_pos = direction_mov()
+            special_cell = self.maze.is_special_cell(self.mg_pos)
+            if special_cell is not False:
+                self.search_special(special_cell)
+            return True
 
     def search_special(self, special_cell):
         """ I'm looking if there is something special on the cell. """
