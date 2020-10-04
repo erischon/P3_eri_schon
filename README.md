@@ -7,7 +7,7 @@ A 2D game in Python. You play MacGyver who has to escape from a maze.
 
 ## Technologies
 
-Python
+- Python
 
 ## Author
 
@@ -19,7 +19,7 @@ This project was built under the Creative Commons licence.
 
 ## Requierement
 
-pygame
+- ygame
 
 ## Run the game
 
