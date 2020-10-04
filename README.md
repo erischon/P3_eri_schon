@@ -19,7 +19,7 @@ This project was built under the Creative Commons licence.
 
 ## Requierement
 
-- ygame
+- Pygame
 
 ## Run the game
 
