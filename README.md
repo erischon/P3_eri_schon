@@ -19,6 +19,7 @@ This project was built under the Creative Commons licence.
 
 ## Requierement
 
+- Python 3
 - Pygame
 
 ## Run the game
