@@ -27,7 +27,7 @@ python -m helpmacgyver
 
 ## Rules
 
-You can move MacGyver with directional arrows.
+You can move MacGyver with directional arrows : &larr; &uarr; &rarr; &darr;
 
 To win : MacGyver must pick up the 3 items and move to the Guardian cell.
 
