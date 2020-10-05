@@ -2,7 +2,7 @@ import pygame
 
 
 class GameController:
-    """ I'm the admin of the game. """
+    """ I'm administrate the end of the game. """
 
     def __init__(self, window):
         self.window = window
